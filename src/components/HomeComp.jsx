@@ -17,8 +17,9 @@ const HomeComp = () => {
           bellow
         </p>
         <a
-          href="#"
-          className="w-24 text-white bg-orange-600 px-4 py-2 rounded-md hover:bg-orange-500 text-sm"
+          href="https://api.whatsapp.com/send?phone=6282213648742"
+          className="w-24 text-white bg-orange-600 px-4 py-2 rounded-md hover:bg-slate-700 text-sm"
+          target="_blank"
         >
           Contact Me!
         </a>

@@ -5,8 +5,8 @@ import Resume from "../components/ResumeComp";
 const ResumePages = () => {
   return (
     <div className="flex relative">
-      <Sidebar />
       <Resume />
+      <Sidebar />
     </div>
   );
 };

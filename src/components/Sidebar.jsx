@@ -4,7 +4,6 @@ import {
   FaGithub,
   FaInstagram,
   FaWhatsapp,
-  FaUser,
   FaFile,
   FaPager,
   FaMailBulk,
@@ -49,8 +48,12 @@ const Sidebar = () => {
             <p className="text-center text-sm">Junior Full-Stack Developer</p>
           </li>
 
-          <li className="mb-2 rounded hover:shadow hover:bg-slate-600 hover:cursor-pointer py-2 mt-4 text-sm">
-            <a href="/" className="px-3" onClick={() => navigate("/")}>
+          <li className="mb-2 rounded hover:shadow hover:bg-slate-600 hover:cursor-pointer py-2 mt-4 text-sm group">
+            <a
+              href="/"
+              className="px-3 group-first"
+              onClick={() => navigate("/")}
+            >
               <FaHome className="inline-block w-6 h-6 mr-3 -mt-2"></FaHome>
               Home
             </a>
