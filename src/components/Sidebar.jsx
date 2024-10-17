@@ -17,13 +17,13 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex sm:fixed sm:top-0 sm:left-0 transition-all ease-in-out delay-500 ">
+    <div className="flex  top-0 left-0 fixed">
       <div>
         <FaBars
           size={35}
           className={`${
             show ? "" : "ml-72"
-          } text-slate-900 my-2 pl-4 cursor-pointer`}
+          } text-slate-900 my-2 pl-4 cursor-pointer mt-5`}
           onClick={() => setShow(!show)}
         ></FaBars>
       </div>
@@ -31,10 +31,10 @@ const Sidebar = () => {
       <div
         className={`${
           show ? " hidden " : " block "
-        }w-72 bg-slate-900 fixed h-screen px-4 py-2`}
+        }w-72 bg-white fixed h-screen  drop-shadow-lg`}
       >
-        <ul className="mt-3 text-white relative">
-          <li>
+        <ul className="text-black relative">
+          <li className="bg-slate-700 rounded-b-2xl p-2 ml-2 mr-2">
             <div className="flex justify-center mt-4 mb-2">
               <img
                 src="./src/assets/me.png"
@@ -42,27 +42,25 @@ const Sidebar = () => {
                 className="w-40 rounded-full shadow-slate-200 bg-white"
               />
             </div>
-            <h2 className="text-center mb-1 text-2xl font-semibold">
+            <h2 className="text-center text-2xl font-semibold text-white">
               Muhammad Fadli
             </h2>
-            <p className="text-center text-sm">Junior Full-Stack Developer</p>
+            <p className="text-center text-sm text-white pb-2">
+              Junior Full-Stack Developer
+            </p>
           </li>
 
-          <li className="mb-2 rounded hover:shadow hover:bg-slate-600 hover:cursor-pointer py-2 mt-4 text-sm group">
-            <a
-              href="/"
-              className="px-3 group-first"
-              onClick={() => navigate("/")}
-            >
+          <li className="mb-2 ml-2 mr-2 rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group">
+            <a href="/" className="pl-1" onClick={() => navigate("/")}>
               <FaHome className="inline-block w-6 h-6 mr-3 -mt-2"></FaHome>
               Home
             </a>
           </li>
 
-          <li className="mb-2 rounded hover:shadow hover:bg-slate-600 hover:cursor-pointer py-2 text-sm">
+          <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white py-2 text-sm">
             <a
               href="/resume"
-              className="px-3 "
+              className="pl-1 "
               onClick={() => navigate("/resume")}
             >
               <FaFile className="inline-block w-6 h-6 mr-3 -mt-2"></FaFile>
@@ -70,15 +68,19 @@ const Sidebar = () => {
             </a>
           </li>
 
-          <li className="mb-2 rounded hover:shadow hover:bg-slate-600 hover:cursor-pointer py-2 text-sm">
-            <a href="#" className="px-3">
+          <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm">
+            <a
+              href="#"
+              className="pl-1"
+              onClick={() => navigate("/portofolio")}
+            >
               <FaPager className="inline-block w-6 h-6 mr-3 -mt-2"></FaPager>
               Portofolio
             </a>
           </li>
 
-          <li className="mb-2 rounded hover:shadow hover:bg-slate-600 hover:cursor-pointer py-2 text-sm">
-            <a href="#" className="px-3">
+          <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm">
+            <a href="#" className="pl-1">
               <FaMailBulk className="inline-block w-6 h-6 mr-3 -mt-2"></FaMailBulk>
               Contact
             </a>
@@ -86,7 +88,7 @@ const Sidebar = () => {
         </ul>
 
         {/* Icon Sosmed */}
-        <div className="flex justify-center fixed bottom-0 left-16 text-white">
+        <div className="flex justify-center fixed bottom-0 left-16 text-black">
           <a
             href="https://github.com/Fadli080818"
             className="pr-4"

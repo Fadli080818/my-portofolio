@@ -9,11 +9,11 @@ export default {
     },
     extend: {
       screens: {
-        sm: "265px",
+        // sm: "265px",
       },
 
       colors: {
-        bgColor: "#F5F7F4",
+        bgColor: "#F1F3F0",
       },
     },
   },
