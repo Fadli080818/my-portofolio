@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 const ResumePages = () => {
   return (
-    <div className="flex bg-[url('./src/assets/background.jpg')] bg-cover bg-no-repeat h-screen overflow-y-scroll">
+    <div className="flex bg-[url('/src/assets/background.jpg')] bg-cover bg-no-repeat h-screen overflow-y-scroll">
       <Resume />
       <Navbar />
       <Sidebar />

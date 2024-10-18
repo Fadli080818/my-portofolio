@@ -3,7 +3,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 const PortofolioComp = () => {
   return (
-    <div className="flex justify-center w-full h-auto p-5 bg-[url('./src/assets/background.jpg')] bg-cover bg-no-repeat sm:pt-12 ">
+    <div className="flex justify-center w-full h-auto p-5 bg-[url('/src/assets/background.jpg')] bg-cover bg-no-repeat sm:pt-12 ">
       <div className=" lg:w-3/4 md:w-3/4 h-auto shadow-2xl  rounded-md border p-4 relative">
         <div className="flex justify-between">
           <h1 className="text-2xl font-bold mb-1">Portofolio</h1>
@@ -27,7 +27,7 @@ const PortofolioComp = () => {
           <div className="flex w-full m-3">
             <img
               className=" w-full rounded-xl"
-              src="./src/assets/react.jpg"
+              src="src/assets/react.jpg"
               alt=""
             />
           </div>
@@ -35,7 +35,7 @@ const PortofolioComp = () => {
           <div className="flex w-1/2 m-3">
             <img
               className="w-full rounded-xl"
-              src="./src/assets/javascript.jpg"
+              src="src/assets/javascript.jpg"
               alt=""
             />
           </div>
@@ -43,7 +43,7 @@ const PortofolioComp = () => {
           <div className="flex w-1/2 m-3">
             <img
               className="w-full rounded-xl"
-              src="./src/assets/tailwind.jpg"
+              src="src/assets/tailwind.jpg"
               alt=""
             />
           </div>

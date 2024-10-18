@@ -11,7 +11,7 @@ const ResumeComp = () => {
       duration: "2018 - 2021",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, commodi!",
-      img: "./src/assets/img2.svg",
+      img: "/src/assets/img2.svg",
     },
     {
       id: "2",
@@ -20,7 +20,7 @@ const ResumeComp = () => {
       duration: "2016 - 2018",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, commodi!",
-      img: "./src/assets/img1.svg",
+      img: "/src/assets/img1.svg",
     },
   ]);
 

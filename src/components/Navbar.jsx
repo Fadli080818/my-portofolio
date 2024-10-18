@@ -15,7 +15,7 @@ const Navbar = () => {
 
         <img
           className="w-12 h-12 rounded-full  shadow-xl border-solid border-slate-900 hover:scale-105 transition-all ease-in-out duration-300 hover:cursor-pointer"
-          src="./src/assets/me1.jpg"
+          src="src/assets/me1.jpg"
           alt=""
         />
       </div>
