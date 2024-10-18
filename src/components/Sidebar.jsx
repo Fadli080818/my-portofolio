@@ -18,16 +18,6 @@ const Sidebar = () => {
 
   return (
     <div className="flex  top-0 left-0 fixed">
-      <div>
-        <FaBars
-          size={35}
-          className={`${
-            show ? "" : "ml-72"
-          } text-slate-900 my-2 pl-4 cursor-pointer mt-5`}
-          onClick={() => setShow(!show)}
-        ></FaBars>
-      </div>
-
       <div
         className={`${
           show ? " hidden " : " block "
@@ -115,6 +105,16 @@ const Sidebar = () => {
 
           <br />
         </div>
+      </div>
+
+      <div>
+        <FaBars
+          size={35}
+          className={`${
+            show ? "text-slate-800" : "ml-56 absolute text-white"
+          }  my-2 pl-4 cursor-pointer mt-5 `}
+          onClick={() => setShow(!show)}
+        />
       </div>
     </div>
   );
