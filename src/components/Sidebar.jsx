@@ -41,11 +41,7 @@ const Sidebar = () => {
           </li>
 
           <li className="mb-2 ml-2 mr-2 rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group">
-            <a
-              href="/"
-              className="pl-1"
-              onClick={() => navigate("/my-portofolio")}
-            >
+            <a className="pl-1" onClick={() => navigate("/my-portofolio/")}>
               <FaHome className="inline-block w-6 h-6 mr-3 -mt-2"></FaHome>
               Home
             </a>
