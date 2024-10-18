@@ -41,7 +41,11 @@ const Sidebar = () => {
           </li>
 
           <li className="mb-2 ml-2 mr-2 rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group">
-            <a href="/" className="pl-1" onClick={() => navigate("/")}>
+            <a
+              href="/"
+              className="pl-1"
+              onClick={() => navigate("/my-portofolio")}
+            >
               <FaHome className="inline-block w-6 h-6 mr-3 -mt-2"></FaHome>
               Home
             </a>
@@ -49,9 +53,9 @@ const Sidebar = () => {
 
           <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white py-2 text-sm">
             <a
-              href="/resume"
+              href=""
               className="pl-1 "
-              onClick={() => navigate("/resume")}
+              onClick={() => navigate("/my-portofolio/resume")}
             >
               <FaFile className="inline-block w-6 h-6 mr-3 -mt-2"></FaFile>
               Resume
@@ -60,9 +64,9 @@ const Sidebar = () => {
 
           <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm">
             <a
-              href="#"
+              href=""
               className="pl-1"
-              onClick={() => navigate("/portofolio")}
+              onClick={() => navigate("/my-portofolio/portofolio")}
             >
               <FaPager className="inline-block w-6 h-6 mr-3 -mt-2"></FaPager>
               Portofolio
