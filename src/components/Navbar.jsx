@@ -3,7 +3,7 @@ import { FaBars, FaUser, FaPhone } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-end items-center p-3 w-full top-0 left-0 fixed rounded-b-xl bg-white shadow-md">
+    <div className="flex justify-end items-center p-3 w-full top-0 left-0 fixed rounded-b-xl bg-white shadow-xl">
       <div className="flex justify-center items-center ">
         <div className=" mr-2">
           <p className="text-sm font-semibold text-right">Muhammad Fadli</p>

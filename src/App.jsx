@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/my-portofolio" element={<HomePages />} />
-        <Route path="/my-portofolio/resume" element={<ResumePages />} />
-        <Route path="/my-portofolio/portofolio" element={<PortofolioPages />} />
+        <Route path="/" element={<HomePages />} />
+        <Route path="/resume" element={<ResumePages />} />
+        <Route path="/portofolio" element={<PortofolioPages />} />
       </Routes>
     </Router>
   );

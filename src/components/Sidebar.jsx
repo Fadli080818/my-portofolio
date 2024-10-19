@@ -20,7 +20,7 @@ const Sidebar = () => {
     <div className="flex  top-0 left-0 fixed">
       <div
         className={`${
-          show ? " hidden " : " block "
+          show ? " invisible " : " block "
         }w-72 bg-white fixed h-screen  drop-shadow-lg`}
       >
         <ul className="text-black relative">
@@ -41,29 +41,21 @@ const Sidebar = () => {
           </li>
 
           <li className="mb-2 ml-2 mr-2 rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group">
-            <a className="pl-1" onClick={() => navigate("/my-portofolio/")}>
+            <a className="pl-1" onClick={() => navigate("/")}>
               <FaHome className="inline-block w-6 h-6 mr-3 -mt-2"></FaHome>
               Home
             </a>
           </li>
 
           <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white py-2 text-sm">
-            <a
-              href=""
-              className="pl-1 "
-              onClick={() => navigate("/my-portofolio/resume")}
-            >
+            <a href="" className="pl-1 " onClick={() => navigate("/resume")}>
               <FaFile className="inline-block w-6 h-6 mr-3 -mt-2"></FaFile>
               Resume
             </a>
           </li>
 
           <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm">
-            <a
-              href=""
-              className="pl-1"
-              onClick={() => navigate("/my-portofolio/portofolio")}
-            >
+            <a href="" className="pl-1" onClick={() => navigate("/portofolio")}>
               <FaPager className="inline-block w-6 h-6 mr-3 -mt-2"></FaPager>
               Portofolio
             </a>
