@@ -9,7 +9,13 @@ const Navbar = () => {
           <p className="text-sm font-semibold text-right">Muhammad Fadli</p>
           <div className="flex items-center text-sm text-orange-700 text-right">
             <FaPhone size={10}></FaPhone>
-            <p className="text-sm ml-1">+62 822 1364 8742</p>
+            <a
+              className="text-sm ml-1"
+              href="https://api.whatsapp.com/send?phone=6282213648742"
+              target="_blank"
+            >
+              +62 822 1364 8742
+            </a>
           </div>
         </div>
 

@@ -7,7 +7,6 @@ const HomePages = () => {
   return (
     <div className="flex justify-center bg-[url('/src/assets/background.jpg')] bg-cover bg-no-repeat relative">
       <HomeComp />
-
       <Navbar />
       <Sidebar />
     </div>

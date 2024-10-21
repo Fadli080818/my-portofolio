@@ -9,13 +9,10 @@ const HomeComp = () => {
           <h2 className="text-2xl mb-1">
             I'm <span className="font-bold">Fadli</span>
           </h2>
-          <p className="text-lg text-orange-600 mb-3">
-            Junior Full Stack Developer
-          </p>
-          <p className="mb-5 mr-5">
-            I'm a junior Full Stack Developer focused for Company System
-            Development. If you need system for your Company contact me on
-            Button bellow
+          <p className="text-lg text-orange-600 mb-3">Full Stack Developer</p>
+          <p className="mb-5 mr-5 text-sm">
+            I'm a Full Stack Developer focused on Business System Development.
+            If you need system for your Business please feel free to contact me
           </p>
           <a
             href="https://api.whatsapp.com/send?phone=6282213648742"

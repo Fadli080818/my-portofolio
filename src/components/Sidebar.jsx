@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaHome,
   FaGithub,
@@ -36,26 +36,35 @@ const Sidebar = () => {
               Muhammad Fadli
             </h2>
             <p className="text-center text-sm text-white pb-2">
-              Junior Full-Stack Developer
+              Full-Stack Developer
             </p>
           </li>
 
-          <li className="mb-2 ml-2 mr-2 rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group">
-            <a className="pl-1" onClick={() => navigate("/")}>
+          <li
+            className="mb-2 ml-2 mr-2 rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group"
+            onClick={() => navigate("/")}
+          >
+            <a href="/" className="pl-1">
               <FaHome className="inline-block w-6 h-6 mr-3 -mt-2"></FaHome>
               Home
             </a>
           </li>
 
-          <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white py-2 text-sm">
-            <a href="" className="pl-1 " onClick={() => navigate("/resume")}>
+          <li
+            className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white py-2 text-sm"
+            onClick={() => navigate("/resume")}
+          >
+            <a href="/resume" className="pl-1 ">
               <FaFile className="inline-block w-6 h-6 mr-3 -mt-2"></FaFile>
               Resume
             </a>
           </li>
 
-          <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm">
-            <a href="" className="pl-1" onClick={() => navigate("/portofolio")}>
+          <li
+            className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm "
+            onClick={() => navigate("/portofolio")}
+          >
+            <a href="/portofolio" className="pl-1">
               <FaPager className="inline-block w-6 h-6 mr-3 -mt-2"></FaPager>
               Portofolio
             </a>
