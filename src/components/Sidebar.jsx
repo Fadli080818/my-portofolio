@@ -11,6 +11,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import ImgMe from "/src/assets/me.png";
 
 const Sidebar = () => {
   const [show, setShow] = useState(true);
@@ -27,7 +28,7 @@ const Sidebar = () => {
           <li className="bg-slate-700 rounded-b-2xl p-2 ml-2 mr-2">
             <div className="flex justify-center mt-4 mb-2">
               <img
-                src="src/assets/me.png"
+                src={ImgMe}
                 alt=""
                 className="w-40 rounded-full shadow-slate-200 bg-white"
               />

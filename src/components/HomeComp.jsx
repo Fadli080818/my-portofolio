@@ -1,4 +1,5 @@
 import React from "react";
+import ImgMe from "/src/assets/me2.png";
 
 const HomeComp = () => {
   return (
@@ -25,7 +26,7 @@ const HomeComp = () => {
 
         <div className=" flex justify-center mt-12 mb-10 md:w-1/2 ">
           <img
-            src="/src/assets/me2.png"
+            src={ImgMe}
             alt=""
             className="rounded-full shadow-2xl w-60 h-60 hover:scale-125 transition-all ease-in-out duration-300"
           />

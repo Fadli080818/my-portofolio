@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars, FaUser, FaPhone } from "react-icons/fa";
+import ImgMe from "/src/assets/me1.jpg";
 
 const Navbar = () => {
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
 
         <img
           className="w-12 h-12 rounded-full  shadow-xl border-solid border-slate-900 hover:scale-105 transition-all ease-in-out duration-300 hover:cursor-pointer"
-          src="src/assets/me1.jpg"
+          src={ImgMe}
           alt=""
         />
       </div>
