@@ -70,7 +70,10 @@ const Sidebar = () => {
             </a>
           </li>
 
-          <li className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm">
+          <li
+            className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm"
+            onClick={() => navigate("/contact")}
+          >
             <a href="#" className="pl-1">
               <FaMailBulk className="inline-block w-6 h-6 mr-3 -mt-2"></FaMailBulk>
               Contact
