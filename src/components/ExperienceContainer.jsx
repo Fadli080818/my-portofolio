@@ -57,7 +57,7 @@ const ExperienceContainer = () => {
       id: "6",
       company: "PT. Home Center Indonesia",
       company_type: "Furniture Retail Company",
-      title: "Marketing",
+      title: "Sales Multi Talents",
       duration: "2023 - Now",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, commodi!",

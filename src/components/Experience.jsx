@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FaExpandAlt } from "react-icons/fa";
-import ResumeComp from "./ResumeComp";
 
 const Experience = (props) => {
   return (
