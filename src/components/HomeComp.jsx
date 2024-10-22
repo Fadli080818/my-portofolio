@@ -16,7 +16,7 @@ const HomeComp = () => {
             If you need system for your Business please feel free to contact me
           </p>
           <a
-            href="https://api.whatsapp.com/send?phone=6282213648742"
+            href="https://api.whatsapp.com/send?phone=6285191580140"
             className="w-24 text-white bg-orange-600 px-4 py-2 rounded-md hover:bg-slate-700 text-sm"
             target="_blank"
           >

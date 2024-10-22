@@ -32,7 +32,7 @@ const ResumeComp = () => {
             <IoMdClose
               size={20}
               className="absolute top-4 right-4 cursor-pointer hover:scale-110"
-              onClick={() => setModal(!modal)}
+              onClick={() => setModal(false)}
             />
             <h4 className="text-lg font-semibold py-1  text-slate-800 shadow-sm">
               Detail

@@ -12,10 +12,10 @@ const Navbar = () => {
             <FaPhone size={10}></FaPhone>
             <a
               className="text-sm ml-1"
-              href="https://api.whatsapp.com/send?phone=6282213648742"
+              href="https://api.whatsapp.com/send?phone=6285191580140"
               target="_blank"
             >
-              +62 822 1364 8742
+              +62 851 9158 0140
             </a>
           </div>
         </div>

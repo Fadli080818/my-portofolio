@@ -74,12 +74,12 @@ const ExperienceContainer = () => {
           return (
             <>
               <Experience
-                key={experience.id}
                 title={experience.title}
                 company={experience.company}
                 company_type={experience.company_type}
                 duration={experience.duration}
                 city={experience.city}
+                key={experience.id}
               />
             </>
           );
