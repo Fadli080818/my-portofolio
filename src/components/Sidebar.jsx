@@ -10,6 +10,7 @@ import {
   FaLinkedin,
   FaBars,
 } from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import ImgMe from "/src/assets/me.png";
 
@@ -26,6 +27,11 @@ const Sidebar = () => {
       >
         <ul className="text-black relative ">
           <li className="bg-white rounded-b-2xl p-2 ml-2 mr-2 border-l border-r border-b border-t-4 border-t-slate-700 border-slate-300 shadow-md">
+            <IoMdCloseCircle
+              size={30}
+              className="absolute cursor-pointer right-5 text-slate-700"
+              onClick={() => setShow(!show)}
+            />
             <div className="flex justify-center mt-4 mb-2 ">
               <img
                 src={ImgMe}
@@ -81,28 +87,36 @@ const Sidebar = () => {
         </ul>
 
         {/* Icon Sosmed */}
-        <div className="flex justify-center fixed bottom-0 left-0 text-white bg-slate-700 w-full pt-4 border-t-4 border-t-orange-500">
+        <div className="flex justify-evenly fixed bottom-0 left-0 text-white bg-slate-700 w-full pt-3 pb-3 border-t-4 border-t-orange-500">
           <a
             href="https://github.com/Fadli080818"
-            className="pr-4"
             target="_blank"
+            className="hover:text-orange-400 hover:scale-110"
           >
             <FaGithub size={25}></FaGithub>
           </a>
 
-          <a href="#" className="pr-4" target="_blank">
+          <a
+            href="#"
+            target="_blank"
+            className="hover:text-orange-400 hover:scale-110"
+          >
             <FaLinkedin size={25}></FaLinkedin>
           </a>
 
           <a
             href="https://instagram.com/fadli0428"
-            className="pb-4 pr-4"
             target="_blank"
+            className="hover:text-orange-400 hover:scale-110"
           >
             <FaInstagram size={25}></FaInstagram>
           </a>
 
-          <a href="https://wa.me/6285191580140" target="_blank">
+          <a
+            href="https://wa.me/6285191580140"
+            target="_blank"
+            className="hover:text-orange-400 hover:scale-110"
+          >
             <FaWhatsapp size={25}></FaWhatsapp>
           </a>
 
@@ -113,9 +127,7 @@ const Sidebar = () => {
       <div>
         <FaBars
           size={35}
-          className={`${
-            show ? "text-slate-800" : "ml-56 absolute "
-          }  my-2 pl-4 cursor-pointer mt-5 `}
+          className="text-slate-800 my-2 pl-4 cursor-pointer mt-5  "
           onClick={() => setShow(!show)}
         />
       </div>
