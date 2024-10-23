@@ -22,27 +22,25 @@ const Sidebar = () => {
       <div
         className={`${
           show ? " invisible " : " block "
-        }w-72 bg-white fixed h-screen  drop-shadow-lg`}
+        }w-72 bg-slate-50 fixed h-screen drop-shadow-lg transition-all `}
       >
-        <ul className="text-black relative">
-          <li className="bg-slate-700 rounded-b-2xl p-2 ml-2 mr-2">
-            <div className="flex justify-center mt-4 mb-2">
+        <ul className="text-black relative ">
+          <li className="bg-white rounded-b-2xl p-2 ml-2 mr-2 border-l border-r border-b border-t-4 border-t-slate-700 border-slate-300 shadow-md">
+            <div className="flex justify-center mt-4 mb-2 ">
               <img
                 src={ImgMe}
                 alt=""
-                className="w-40 rounded-full shadow-slate-200 bg-white"
+                className="w-40 rounded-full  shadow-slate-200 bg-white"
               />
             </div>
-            <h2 className="text-center text-2xl font-semibold text-white">
+            <h2 className="text-center text-2xl font-semibold ">
               Muhammad Fadli
             </h2>
-            <p className="text-center text-sm text-white pb-2">
-              Full-Stack Developer
-            </p>
+            <p className="text-center text-sm  pb-2">Full-Stack Developer</p>
           </li>
 
           <li
-            className="mb-2 ml-2 mr-2 rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group"
+            className="pl-2 pb-3 pt-3 hover:border-r-4 hover:border-orange-400 transition ease-in-out duration-300 hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 mt-4 text-sm group"
             onClick={() => navigate("/")}
           >
             <a href="/" className="pl-1">
@@ -52,7 +50,7 @@ const Sidebar = () => {
           </li>
 
           <li
-            className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white py-2 text-sm"
+            className="pl-2 pb-3 pt-3 hover:border-r-4 hover:border-orange-400 transition ease-in-out duration-300 hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white py-2 text-sm"
             onClick={() => navigate("/resume")}
           >
             <a href="/resume" className="pl-1 ">
@@ -62,7 +60,7 @@ const Sidebar = () => {
           </li>
 
           <li
-            className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm "
+            className="pl-2 pb-3 pt-3 hover:border-r-4 hover:border-orange-400 transition ease-in-out duration-300 hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm "
             onClick={() => navigate("/portofolio")}
           >
             <a href="/portofolio" className="pl-1">
@@ -72,7 +70,7 @@ const Sidebar = () => {
           </li>
 
           <li
-            className="mb-2 ml-2 mr-2  rounded hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm"
+            className="pl-2 pb-3 pt-3 hover:border-r-4 hover:border-orange-400 transition ease-in-out duration-300 hover:shadow hover:bg-slate-700 hover:cursor-pointer hover:text-white  py-2 text-sm"
             onClick={() => navigate("/contact")}
           >
             <a href="/contact" className="pl-1">
@@ -83,7 +81,7 @@ const Sidebar = () => {
         </ul>
 
         {/* Icon Sosmed */}
-        <div className="flex justify-center fixed bottom-0 left-16 text-black">
+        <div className="flex justify-center fixed bottom-0 left-0 text-white bg-slate-700 w-full pt-4 border-t-4 border-t-orange-500">
           <a
             href="https://github.com/Fadli080818"
             className="pr-4"
@@ -116,7 +114,7 @@ const Sidebar = () => {
         <FaBars
           size={35}
           className={`${
-            show ? "text-slate-800" : "ml-56 absolute text-white"
+            show ? "text-slate-800" : "ml-56 absolute "
           }  my-2 pl-4 cursor-pointer mt-5 `}
           onClick={() => setShow(!show)}
         />
