@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoLogoJavascript, IoMdClose } from "react-icons/io";
 import ExperienceContainer from "./ExperienceContainer";
 import SkillContainer from "./SkillContain";
@@ -6,6 +6,11 @@ import LanguangeContain from "./LanguangeContain";
 
 const ResumeComp = () => {
   const [modal, setModal] = useState(false);
+
+  const onModalClick = (value) => {
+    setModal(value);
+  };
+
   return (
     <>
       <div className=" w-full h-max p-5 pt-24 relative">
@@ -16,7 +21,7 @@ const ResumeComp = () => {
         <p className="text-sm mb-2">Hi there, This is my Resume.</p>
 
         {/* Content*/}
-        <ExperienceContainer />
+        <ExperienceContainer onModalClick={onModalClick} />
         <SkillContainer />
         <LanguangeContain />
       </div>
