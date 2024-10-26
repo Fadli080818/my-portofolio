@@ -18,9 +18,9 @@ const SkillContainer = () => {
     <div>
       <div className="md:w-full h-auto border border-slate-300 bg-white rounded-xl p-4 relative mb-5">
         <h3 className=" text-lg font-semibold mb-2">Skill</h3>
-        <div className="flex-wrap md:flex md:justify-start">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-4  sm:grid-cols-2">
           {/* Skill Content */}
-          <div className=" mb-4 p-4 shadow-md bg-slate-50 text-slate-800 border border-slate-200 hover:cursor-pointer hover:bg-slate-600 hover:text-white hover:scale-95 transition-all ease-in-out duration-200 md:w-96 h-auto md:mr-3 rounded-lg">
+          <div className=" mb-4 p-4 shadow-md bg-slate-50 text-slate-800 border border-slate-200 hover:cursor-pointer hover:bg-slate-600 hover:text-white hover:scale-95 transition-all ease-in-out duration-200 h-auto rounded-lg">
             <div className="w-full ">
               <div className="flex items-center mb-3">
                 <p className="mr-3 font-semibold">Programming</p>
@@ -53,7 +53,7 @@ const SkillContainer = () => {
               </ul>
             </div>
           </div>
-          <div className=" mb-4 p-4 shadow-md bg-slate-50 text-slate-800 border border-slate-200 hover:cursor-pointer hover:bg-slate-600 hover:text-white hover:scale-95 transition-all ease-in-out duration-200 md:w-96 h-auto md:mr-3 rounded-lg">
+          <div className=" mb-4 p-4 shadow-md bg-slate-50 text-slate-800 border border-slate-200 hover:cursor-pointer hover:bg-slate-600 hover:text-white hover:scale-95 transition-all ease-in-out duration-200 h-auto rounded-lg">
             <div className="w-full ">
               <div className="flex items-center mb-3">
                 <p className="mr-3 font-semibold">Administration</p>

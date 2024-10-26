@@ -13,7 +13,8 @@ const ExperienceContainer = (props) => {
   return (
     <div className="md:w-full h-auto border border-slate-300 bg-white rounded-xl p-4 relative mb-5">
       <h3 className=" text-lg font-semibold mb-2">Experience</h3>
-      <div className="flex-wrap md:flex md:justify-around">
+      {/* flex-wrap md:flex md:justify-around */}
+      <div className="grid grid-cols-1 gap-3 lg:grid-cols-4 sm:grid-cols-2">
         {/* Work Experience Content */}
         {experiences.map(
           ({ id, title, company, company_type, duration, city }) => {

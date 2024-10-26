@@ -9,8 +9,8 @@ const LanguangeContain = () => {
   return (
     <div className="md:w-full h-auto border border-slate-300 bg-white rounded-xl p-4 relative mb-5">
       <h3 className=" text-lg font-semibold mb-2">Languange</h3>
-      <div className="flex-wrap md:flex md:justify-start">
-        <div className=" mb-4 p-4 shadow-md bg-slate-50 text-slate-800 border border-slate-200 hover:cursor-pointer hover:bg-slate-600 hover:text-white hover:scale-95 transition-all ease-in-out duration-200 md:w-96 h-auto md:mr-3 rounded-lg">
+      <div className="grid grid-cols-1 gap-3 lg:grid-cols-4  sm:grid-cols-2">
+        <div className=" mb-4 p-4 shadow-md bg-slate-50 text-slate-800 border border-slate-200 hover:cursor-pointer hover:bg-slate-600 hover:text-white hover:scale-95 transition-all ease-in-out duration-200 h-auto rounded-lg">
           <div className="flex items-center">
             <p className="mr-3 font-semibold">English</p>
             <FaStar className="text-yellow-500 mr-2"></FaStar>
